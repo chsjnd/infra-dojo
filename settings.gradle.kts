@@ -4,8 +4,10 @@ rootProject.name = "dojo"
 // Multi-Module Projects으로 구성하는 경우,
 // Sub Module Porject들의 이름
 include(
+    "service-common",
     "microservices:product-composite-server",
-    "microservices:product-server",
+    "microservices:product-server:product-web",
+    "microservices:product-server:product-core",
     "microservices:recommendation-server",
     "microservices:review-server"
 )

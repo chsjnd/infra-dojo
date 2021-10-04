@@ -26,7 +26,6 @@ subprojects {
     apply(plugin = "io.spring.dependency-management")
 
     java.sourceCompatibility = JavaVersion.VERSION_11
-
     dependencies {
         val mockkVersion: String by project
         val kotestVersion: String by project
@@ -45,6 +44,12 @@ subprojects {
 
     tasks.withType<Test> {
         useJUnitPlatform()
+    }
+}
+
+configure(subprojects - project(":service-common")) {
+    dependencies {
+        implementation(project(":service-common"))
     }
 }
 
