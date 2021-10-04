@@ -6,7 +6,8 @@ rootProject.name = "dojo"
 include(
     "service-common",
     "microservices:product-composite-server",
-    "microservices:product-server",
+    "microservices:product-server:product-web",
+    "microservices:product-server:product-core",
     "microservices:recommendation-server",
     "microservices:review-server"
 )

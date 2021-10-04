@@ -27,7 +27,6 @@ subprojects {
 
     java.sourceCompatibility = JavaVersion.VERSION_11
     dependencies {
-        implementation(project(":service-common"))
         val mockkVersion: String by project
         val kotestVersion: String by project
         testImplementation("org.junit.jupiter:junit-jupiter")
@@ -45,6 +44,12 @@ subprojects {
 
     tasks.withType<Test> {
         useJUnitPlatform()
+    }
+}
+
+configure(subprojects - project(":service-common")) {
+    dependencies {
+        implementation(project(":service-common"))
     }
 }
 
