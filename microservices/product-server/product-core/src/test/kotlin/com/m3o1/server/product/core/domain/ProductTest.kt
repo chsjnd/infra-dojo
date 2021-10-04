@@ -31,31 +31,20 @@ class ProductTest : AnnotationSpec() {
         sut.productId shouldBe 10
         sut.name shouldBe "abc"
         sut.weight shouldBe null
-        sut.serviceAddress shouldBe "localhost"
-    }
-
-    @Test
-    fun `product에 대한 생성자 테스트(serviceAddress가 존재하는 경우)`() {
-        val sut = Product(productId = 10, name = "abc", weight = null, serviceAddress = "www.m3o1.com")
-
-        sut.productId shouldBe 10
-        sut.name shouldBe "abc"
-        sut.weight shouldBe null
-        sut.serviceAddress shouldBe "www.m3o1.com"
     }
 
     @Test
     fun `product에 대한 문자열 테스트`() {
-        val sut = Product(productId = 10, name = "abc", weight = null, serviceAddress = "www.m3o1.com")
+        val sut = Product(productId = 10, name = "abc", weight = null)
 
         sut.toString() shouldBe "Product(productId=10, name=abc, weight=null, serviceAddress=www.m3o1.com)"
     }
 
     @Test
     fun `product에 대한 equal 테스트`() {
-        val sut1 = Product(productId = 10, name = "abc", weight = null, serviceAddress = "www.m3o1.com")
-        val sut2 = Product(productId = 10, name = "abc", weight = null, serviceAddress = "www.m3o1.com")
-        val sut3 = Product(productId = 12, name = "abc", weight = null, serviceAddress = "www.m3o1.com")
+        val sut1 = Product(productId = 10, name = "abc", weight = null)
+        val sut2 = Product(productId = 10, name = "abc", weight = null)
+        val sut3 = Product(productId = 12, name = "abc", weight = null)
 
         sut1 shouldBe sut2
         sut1 shouldNotBe sut3

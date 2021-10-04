@@ -17,12 +17,14 @@ class ProductControllerTest : ControllerTest {
     @Test
     fun `productId를 1로 지정해서 호출하면, 1로 응답이 내려온다`() {
         val responseEntity = restTemplate.getForEntity("/products/1", JsonNode::class.java)
-        responseEntity.body?.get("productId")?.asText() ?: "Unknown" shouldBe "1"
+
+        responseEntity.body?.get("result")?.get("productId")?.asText() ?: "Unknown" shouldBe "1"
     }
 
     @Test
     fun `productId를 문자로 지정해서 호출하면, 400 코드가 내려온다`() {
         val responseEntity = restTemplate.getForEntity("/products/abc", JsonNode::class.java)
+
         responseEntity.statusCode shouldBe HttpStatus.BAD_REQUEST
     }
 }
