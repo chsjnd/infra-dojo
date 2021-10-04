@@ -1,4 +1,4 @@
-package im.toss.util.http
+package com.m3o1.util.http
 
 import io.kotest.core.spec.style.AnnotationSpec
 import io.kotest.matchers.shouldBe
