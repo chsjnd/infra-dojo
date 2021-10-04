@@ -5,11 +5,16 @@ rootProject.name = "dojo"
 // Sub Module Porject들의 이름
 include(
     "service-common",
+
     "microservices:product-composite-server",
+
     "microservices:product-server:product-web",
     "microservices:product-server:product-core",
+
     "microservices:recommendation-server",
-    "microservices:review-server"
+
+    "microservices:review-server:review-web",
+    "microservices:review-server:review-core",
 )
 
 pluginManagement {
