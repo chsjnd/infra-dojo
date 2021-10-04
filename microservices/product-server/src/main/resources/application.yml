@@ -1,0 +1,21 @@
+server:
+  error:
+    whitelabel:
+      enabled: false
+  port: 20001
+  tomcat:
+    accept-count: 100
+    threads:
+      max: 500
+    max-connections: 20000
+    uri-encoding: UTF-8
+    remoteip:
+      internal-proxies: ""
+  forward-headers-strategy: none
+
+
+spring:
+  jpa:
+    open-in-view: false
+  application:
+    name: product
