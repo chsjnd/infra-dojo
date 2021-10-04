@@ -1,4 +1,4 @@
-package com.m3o1.server.recommendation
+package com.m3o1.server.product
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
