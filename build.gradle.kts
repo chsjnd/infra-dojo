@@ -12,6 +12,10 @@ plugins {
 allprojects {
     group = "com.m3o1"
     version = "0.0.1-SNAPSHOT"
+
+    repositories {
+        mavenCentral()
+    }
 }
 
 subprojects {
@@ -22,10 +26,6 @@ subprojects {
     apply(plugin = "io.spring.dependency-management")
 
     java.sourceCompatibility = JavaVersion.VERSION_11
-
-    repositories {
-        mavenCentral()
-    }
 
     dependencies {
         val mockkVersion: String by project

@@ -1,11 +1,11 @@
-package com.m3o1.dojo
+package com.m3o1.server.review
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class DojoApplication
+class RecommendationApplication
 
 fun main(args: Array<String>) {
-    runApplication<DojoApplication>(*args)
+    runApplication<RecommendationApplication>(*args)
 }

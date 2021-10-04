@@ -4,7 +4,10 @@ rootProject.name = "dojo"
 // Multi-Module Projects으로 구성하는 경우,
 // Sub Module Porject들의 이름
 include(
-    "application"
+    "microservices:product-composite-server",
+    "microservices:product-server",
+    "microservices:recommendation-server",
+    "microservices:review-server"
 )
 
 pluginManagement {
