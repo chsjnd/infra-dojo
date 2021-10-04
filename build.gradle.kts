@@ -26,8 +26,8 @@ subprojects {
     apply(plugin = "io.spring.dependency-management")
 
     java.sourceCompatibility = JavaVersion.VERSION_11
-
     dependencies {
+        implementation(project(":service-common"))
         val mockkVersion: String by project
         val kotestVersion: String by project
         testImplementation("org.junit.jupiter:junit-jupiter")
