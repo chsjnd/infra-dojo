@@ -2,7 +2,7 @@ server:
   error:
     whitelabel:
       enabled: false
-  port: 20001
+  port: 20003
   tomcat:
     accept-count: 100
     threads:
@@ -18,4 +18,4 @@ spring:
   jpa:
     open-in-view: false
   application:
-    name: product
+    name: review
