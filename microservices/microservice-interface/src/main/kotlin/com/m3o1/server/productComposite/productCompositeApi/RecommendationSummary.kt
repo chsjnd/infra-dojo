@@ -1,4 +1,4 @@
-package com.m3o1.server.productComposite.core.domain
+package com.m3o1.server.productComposite.productCompositeApi
 
 data class RecommendationSummary(
     val recommendationId: Int,

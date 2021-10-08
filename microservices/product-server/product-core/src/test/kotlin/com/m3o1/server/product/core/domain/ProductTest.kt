@@ -1,5 +1,6 @@
 package com.m3o1.server.product.core.domain
 
+import com.m3o1.server.product.findProductApi.Product
 import io.kotest.core.spec.style.AnnotationSpec
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.shouldNotBe

@@ -1,4 +1,4 @@
-package com.m3o1.util.http.api
+package com.m3o1.server.common.api
 
 import com.fasterxml.jackson.annotation.JsonIgnore
 import com.fasterxml.jackson.annotation.JsonInclude

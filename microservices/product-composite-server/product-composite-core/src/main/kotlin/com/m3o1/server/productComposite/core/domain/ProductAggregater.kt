@@ -1,5 +1,8 @@
 package com.m3o1.server.productComposite.core.domain
 
+import com.m3o1.server.productComposite.productCompositeApi.ProductAggregate
+import com.m3o1.server.productComposite.productCompositeApi.RecommendationSummary
+import com.m3o1.server.productComposite.productCompositeApi.ReviewSummary
 import org.springframework.stereotype.Component
 
 @Component

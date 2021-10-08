@@ -1,5 +1,6 @@
 package com.m3o1.server.recommendation.core.domain
 
+import com.m3o1.server.recommendation.findRecommendApi.Recommendation
 import org.springframework.stereotype.Component
 
 @Component

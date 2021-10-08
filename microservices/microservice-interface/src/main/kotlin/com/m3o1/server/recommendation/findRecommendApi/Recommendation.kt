@@ -1,4 +1,4 @@
-package com.m3o1.server.recommendation.core.domain
+package com.m3o1.server.recommendation.findRecommendApi
 
 data class Recommendation(
     val productId: Int,

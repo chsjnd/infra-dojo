@@ -1,4 +1,4 @@
-package com.m3o1.server.review.core.domain
+package com.m3o1.server.review.findReviewApi
 
 data class Review(
     val productId: Int,

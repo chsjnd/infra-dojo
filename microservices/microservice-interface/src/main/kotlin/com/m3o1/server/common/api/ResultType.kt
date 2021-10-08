@@ -1,4 +1,4 @@
-package com.m3o1.util.http.api
+package com.m3o1.server.common.api
 
 enum class ResultType {
     SUCCESS,

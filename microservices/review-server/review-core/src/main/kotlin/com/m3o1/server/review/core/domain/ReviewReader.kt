@@ -1,5 +1,6 @@
 package com.m3o1.server.review.core.domain
 
+import com.m3o1.server.review.findReviewApi.Review
 import org.springframework.stereotype.Component
 
 @Component
