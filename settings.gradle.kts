@@ -11,7 +11,8 @@ include(
     "microservices:product-server:product-web",
     "microservices:product-server:product-core",
 
-    "microservices:recommendation-server",
+    "microservices:recommendation-server:recommendation-web",
+    "microservices:recommendation-server:recommendation-core",
 
     "microservices:review-server:review-web",
     "microservices:review-server:review-core",
