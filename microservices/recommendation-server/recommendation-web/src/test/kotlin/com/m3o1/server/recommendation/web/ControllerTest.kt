@@ -1,7 +1,7 @@
-package com.m3o1.server.product.web
+package com.m3o1.server.recommendation.web
 
-import com.m3o1.server.product.web.configuration.TestBeanConfiguration
-import com.m3o1.server.product.web.configuration.WebConfiguration
+import com.m3o1.server.recommendation.web.configuration.TestBeanConfiguration
+import com.m3o1.server.recommendation.web.configuration.WebConfiguration
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.context.annotation.Import
 

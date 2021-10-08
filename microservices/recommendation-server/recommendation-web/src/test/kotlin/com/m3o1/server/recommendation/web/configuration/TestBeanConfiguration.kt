@@ -1,4 +1,4 @@
-package com.m3o1.server.product.web.configuration
+package com.m3o1.server.recommendation.web.configuration
 
 import com.m3o1.util.http.ServerUtil
 import org.springframework.boot.test.context.TestConfiguration

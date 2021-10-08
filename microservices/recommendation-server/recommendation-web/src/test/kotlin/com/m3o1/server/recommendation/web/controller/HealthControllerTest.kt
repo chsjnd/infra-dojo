@@ -1,7 +1,7 @@
 package com.m3o1.server.recommendation.web.controller
 
 import com.fasterxml.jackson.databind.JsonNode
-import com.m3o1.server.product.web.ControllerTest
+import com.m3o1.server.recommendation.web.ControllerTest
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
