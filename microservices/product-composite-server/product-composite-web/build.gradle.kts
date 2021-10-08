@@ -4,5 +4,7 @@ tasks.getByName("bootJar") {
 
 dependencies {
     implementation(project(":microservices:product-composite-server:product-composite-core"))
-    implementation(project(":microservices:product-composite-server:product-composite-web"))
+    implementation("org.springframework.boot:spring-boot-starter-web")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
