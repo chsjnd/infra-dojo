@@ -1,7 +1,6 @@
 dependencies {
     api(project(":microservices:microservice-interface"))
-    implementation(project(":microservices:product-composite-server:product-composite-internal-api"))
-
+    implementation("org.springframework:spring-web")
     implementation("org.springframework:spring-context")
 
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")

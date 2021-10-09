@@ -8,6 +8,7 @@ include(
     "microservices:microservice-interface",
 
     "microservices:product-composite-server:product-composite-web",
+    "microservices:product-composite-server:product-composite-internal-api",
     "microservices:product-composite-server:product-composite-core",
 
     "microservices:product-server:product-web",

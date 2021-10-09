@@ -19,3 +19,9 @@ spring:
     open-in-view: false
   application:
     name: product-composite
+
+services:
+  host:
+    product-server: http://localhost:20001
+    recommendation-server: http://localhost:20002
+    review-server: http://localhost:20003
