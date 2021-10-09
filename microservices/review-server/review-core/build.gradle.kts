@@ -1,7 +1,3 @@
-tasks.getByName("bootJar") {
-    enabled = true
-}
-
 dependencies {
     api(project(":microservices:microservice-interface"))
     implementation("org.springframework:spring-context")

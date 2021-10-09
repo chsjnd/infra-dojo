@@ -42,6 +42,32 @@ subprojects {
         }
     }
 
+    tasks.getByName("bootRun") {
+        enabled = false
+    }
+
+    tasks.getByName("bootJar") {
+        enabled = false
+        version = System.getenv("VERSION") ?: project.version
+    }
+
+    tasks.getByName("jar") {
+        version = project.version
+        enabled = true
+        sourceSets {
+            main {
+                resources {
+                    setSrcDirs(listOf("src/main/kotlin", "src/main/java"))
+                    setIncludes(listOf("**/*.kt", "**/*.java"))
+                }
+                resources {
+                    setSrcDirs(listOf("src/main/resources"))
+                    setIncludes(listOf("**/*.*"))
+                }
+            }
+        }
+    }
+
     tasks.withType<Test> {
         useJUnitPlatform()
     }
@@ -52,6 +78,19 @@ configure(subprojects - project(":service-common")) {
         implementation(project(":service-common"))
     }
 }
+
+tasks.getByName("bootRun") {
+    enabled = false
+}
+
+tasks.getByName("bootJar") {
+    enabled = false
+}
+
+tasks.getByName("jar") {
+    enabled = true
+}
+
 
 configurations {
     compileOnly {

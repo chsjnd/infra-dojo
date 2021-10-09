@@ -19,3 +19,9 @@ spring:
     open-in-view: false
   application:
     name: product-composite
+
+services:
+  host:
+    product-server: http://product:8080
+    recommendation-server: http://recommendation:8080
+    review-server: http://review:8080

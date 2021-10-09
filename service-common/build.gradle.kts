@@ -1,7 +1,3 @@
-tasks.getByName("bootJar") {
-    enabled = true
-}
-
 dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.springframework:spring-context")
