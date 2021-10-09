@@ -9,6 +9,12 @@ class ApiResponse<S> {
     val result: S?
     val error: ApiErrorResult?
 
+    constructor() {
+        this.resultType = ResultType.FAIL;
+        this.result = null
+        this.error = null
+    }
+
     constructor(result: S) {
         this.resultType = ResultType.SUCCESS;
         this.result = result
