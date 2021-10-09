@@ -1,11 +1,3 @@
-tasks.getByName("bootJar") {
-    enabled = false
-}
-
-tasks.getByName("jar") {
-    enabled = true
-}
-
 dependencies {
     api(project(":microservices:microservice-interface"))
     implementation(project(":microservices:product-composite-server:product-composite-internal-api"))

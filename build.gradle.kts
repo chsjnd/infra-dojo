@@ -42,6 +42,10 @@ subprojects {
         }
     }
 
+    tasks.getByName("bootRun") {
+        enabled = false
+    }
+
     tasks.getByName("bootJar") {
         enabled = false
         version = System.getenv("VERSION") ?: project.version
@@ -49,7 +53,7 @@ subprojects {
 
     tasks.getByName("jar") {
         version = project.version
-        enabled = false
+        enabled = true
         sourceSets {
             main {
                 resources {
@@ -74,6 +78,19 @@ configure(subprojects - project(":service-common")) {
         implementation(project(":service-common"))
     }
 }
+
+tasks.getByName("bootRun") {
+    enabled = false
+}
+
+tasks.getByName("bootJar") {
+    enabled = false
+}
+
+tasks.getByName("jar") {
+    enabled = true
+}
+
 
 configurations {
     compileOnly {
