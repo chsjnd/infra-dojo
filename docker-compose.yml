@@ -1,0 +1,36 @@
+version: '3.1'
+
+services:
+  product:
+    build:
+      context: microservices/product-server
+      dockerfile: Dockerfile
+    mem_limit: 350m
+    environment:
+      - PROFILE=live
+
+  recommendation:
+    build:
+      context: microservices/recommendation-server
+      dockerfile: Dockerfile
+    mem_limit: 350m
+    environment:
+      - PROFILE=live
+
+  review:
+    build:
+      context: microservices/review-server
+      dockerfile: Dockerfile
+    mem_limit: 350m
+    environment:
+      - PROFILE=live
+
+  product-composite:
+    build:
+      context: microservices/product-composite-server
+      dockerfile: Dockerfile
+    mem_limit: 350m
+    environment:
+      - PROFILE=live
+    ports:
+      - "8080:8080"
