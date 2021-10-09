@@ -42,6 +42,28 @@ subprojects {
         }
     }
 
+    tasks.getByName("bootJar") {
+        enabled = false
+        version = System.getenv("VERSION") ?: project.version
+    }
+
+    tasks.getByName("jar") {
+        version = project.version
+        enabled = false
+        sourceSets {
+            main {
+                resources {
+                    setSrcDirs(listOf("src/main/kotlin", "src/main/java"))
+                    setIncludes(listOf("**/*.kt", "**/*.java"))
+                }
+                resources {
+                    setSrcDirs(listOf("src/main/resources"))
+                    setIncludes(listOf("**/*.*"))
+                }
+            }
+        }
+    }
+
     tasks.withType<Test> {
         useJUnitPlatform()
     }
