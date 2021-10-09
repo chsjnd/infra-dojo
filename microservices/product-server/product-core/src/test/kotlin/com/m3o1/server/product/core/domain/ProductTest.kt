@@ -38,7 +38,7 @@ class ProductTest : AnnotationSpec() {
     fun `product에 대한 문자열 테스트`() {
         val sut = Product(productId = 10, name = "abc", weight = null)
 
-        sut.toString() shouldBe "Product(productId=10, name=abc, weight=null, serviceAddress=www.m3o1.com)"
+        sut.toString() shouldBe "Product(productId=10, name=abc, weight=null)"
     }
 
     @Test
