@@ -12,12 +12,15 @@ include(
     "microservices:product-composite-server:product-composite-core",
 
     "microservices:product-server:product-web",
+    "microservices:product-server:product-persistence",
     "microservices:product-server:product-core",
 
     "microservices:recommendation-server:recommendation-web",
+    "microservices:recommendation-server:recommendation-persistence",
     "microservices:recommendation-server:recommendation-core",
 
     "microservices:review-server:review-web",
+    "microservices:review-server:review-persistence",
     "microservices:review-server:review-core",
 )
 
